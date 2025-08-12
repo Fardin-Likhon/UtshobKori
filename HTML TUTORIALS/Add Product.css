@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: linear-gradient(to right, #ECF4FC, #F9EEF7);
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    --rebecca-purple: hsl(270, 60%, 15%);
+    background-image: linear-gradient(
+      to bottom right, 
+      hsla(203, 92%, 35.5%, 0.25), 
+      var(--rebecca-purple), 
+      hsla(27.6, 87.1%, 35.7%, 0.25)
+    );
+    background-color: var(--rebecca-purple);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar .logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.seller-profile {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.seller-profile .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.seller-profile .seller-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar .menu li {
+    padding: 15px 20px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar .menu li.active {
+    background-color: #6a0dad;
+}
+
+.sidebar .menu li:hover,
+.sidebar .menu li.active {
+    background-color: #6a0dad;
+}
+
+.logout button {
+    background-color: white;
+    color: #4b0082;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.logout button:hover {
+    background-color: #ddd;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .welcome h1 {
+    font-size: 24px;
+    color: #4b0082;
+}
+
+/* Add Product Form */
+.add-product {
+    background-color: #ffffff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.add-product .form-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-product .form-header h2 {
+    color: #4b0082;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4b0082;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4b0082;
+    box-shadow: 0 0 5px rgba(75, 0, 130, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.add-product button {
+    background-color: #4b0082;
+    color: #ffffff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.add-product button:hover {
+    background-color: #6a0dad;
+}
+
+.add-product button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(75, 0, 130, 0.4);
+}
+
+
+/* Notification Icon */
+.notification {
+    position: relative;
+}
+
+.notification-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

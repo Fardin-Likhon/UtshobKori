@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="active-orders.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="seller-profile">
+            <img src="LinkedIn_Profile_Photo.jpg" alt="Seller Profile Picture" class="profile-pic">
+            <p class="seller-name">User Name</p>
+        </div>
+        <ul class="menu">
+            <li><a href="Seller-dashboard.html">Dashboard</a></li>
+            <li><a href="Add Product.html">Add Product</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li class="active"><a href="active-order.html">Orders</a></li> 
+            <li><a href="products.html">Products</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+        <div class="logout">
+            <button>Log out</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="welcome">
+                <h1>Orders</h1>
+                <p>See Order Details</p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search Here">
+                <button>Add Filters</button>
+            </div>
+            <div class="notification">
+                <img src="notification (2).png" alt="Notifications" class="notification-icon">
+            </div>
+        </div>
+
+        <!-- Orders Navigation -->
+        <section id="order-navigation">
+            <a href="active-order.html" class="active">Active Orders</a>
+            <a href="completed-order.html">Completed Orders</a>
+            <a href="cancelled-order.html">Cancelled Orders</a>
+        </section>
+
+        <!-- Active Orders Section -->
+<section id="active-orders">
+    <h2>Active Orders</h2>
+    <div class="order">
+        <img src="1000025222-1.webp" alt="Product Image" class="product-photo">
+        <div class="order-details">
+            <p><strong>Order #10234</strong></p>
+            <p>Description: "Event decoration and catering service for a birthday party."</p>
+            <p>Price: <strong>12,000 Tk</strong></p>
+            <p class="delivery-date">Delivery Date: 2024-11-10</p>
+        </div>
+    </div>
+    <div class="order">
+        <img src="1697714978117.jpg" alt="Product Image" class="product-photo">
+        <div class="order-details">
+            <p><strong>Order #10235</strong></p>
+            <p>Description: "Catering service for corporate event with 200 guests."</p>
+            <p>Price: <strong>18,000 Tk</strong></p>
+            <p class="delivery-date">Delivery Date: 2024-11-12</p>
+        </div>
+    </div>
+    <div class="order">
+        <img src="photodune-4348141-stage-xs.jpg" alt="Product Image" class="product-photo">
+        <div class="order-details">
+            <p><strong>Order #10236</strong></p>
+            <p>Description: "Sound and lighting setup for a concert event."</p>
+            <p>Price: <strong>15,500 Tk</strong></p>
+            <p class="delivery-date">Delivery Date: 2024-11-15</p>
+        </div>
+    </div>
+    <div class="order">
+        <img src="Screenshot_10.png" alt="Product Image" class="product-photo">
+        <div class="order-details">
+            <p><strong>Order #10237</strong></p>
+            <p>Description: "Wedding photography and videography package."</p>
+            <p>Price: <strong>30,000 Tk</strong></p>
+            <p class="delivery-date">Delivery Date: 2024-11-20</p>
+        </div>
+    </div>
+</section>
+
+        
+    </div>
+</body>
+</html>
